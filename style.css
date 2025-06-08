@@ -10,10 +10,6 @@ header {
   padding: 20px;
   text-align: center;
 }
-header h1 {
-  margin: 0;
-  font-size: 2em;
-}
 nav ul {
   list-style: none;
   padding: 0;
@@ -44,6 +40,8 @@ section {
   background-color: #f4faff;
   border-left: 6px solid #4da6ff;
   border-radius: 8px;
+  scroll-margin-top: 100px;
+  min-height: 200px;
 }
 section h2 {
   color: #267acc;
@@ -57,9 +55,4 @@ footer {
 }
 html {
   scroll-behavior: smooth;
-}
-
-section {
-  scroll-margin-top: 100px; /* deixa espaço ao rolar */
-  min-height: 200px; /* garante que a seção tenha espaço */
 }
