@@ -1,99 +1,52 @@
-/* CSS para o Projeto de Alfabetização Infantil */
-
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #fefefe;
-  color: #333;
+  margin: 0;
 }
-
 header {
   background-color: #4da6ff;
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 20px 0;
 }
-
-header h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
 nav ul li {
-  margin: 0 10px;
+  margin: 10px;
 }
-
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 5px;
-  background-color: #3399ff;
-  transition: background-color 0.3s ease;
 }
-
-nav ul li a:hover {
-  background-color: #267acc;
-}
-
 main {
   padding: 20px;
 }
-
 section {
   margin-bottom: 40px;
-  padding: 20px;
-  background-color: #f4faff;
-  border-left: 6px solid #4da6ff;
-  border-radius: 8px;
 }
-
 section h2 {
   color: #267acc;
 }
-
-section ul li {
-  margin-bottom: 8px;
-  line-height: 1.6;
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
 }
-
+.galeria img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 footer {
   background-color: #4da6ff;
   color: white;
   text-align: center;
-  padding: 15px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  font-size: 0.9em;
-}
-
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav ul li {
-    margin: 5px 0;
-  }
-
-  header h1 {
-    font-size: 1.5em;
-  }
-
-  section {
-    padding: 15px;
-  }
+  padding: 10px;
 }
